@@ -24,7 +24,6 @@ gulp.task("server", function() {
     server: "./"
   });
 });
-
 // watch task
 gulp.task("watch", function() {
     // liverelaod
