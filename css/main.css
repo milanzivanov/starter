@@ -215,6 +215,10 @@ body {
             color: red; }
             .main .main__box__left .nav ul li a.active > span > .mdi-folder {
               color: red; }
+          .main .main__box__left .nav ul li a.active span {
+            translate: all 0.3s ease-in-out; }
+            .main .main__box__left .nav ul li a.active span > i {
+              transform: rotate(180deg); }
         .main .main__box__left .nav ul li .mdi-chevron-down {
           margin: 0 20px 0 0;
           cursor: pointer; }
