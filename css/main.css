@@ -129,4 +129,121 @@ html {
 /* ----------------- scss main
 ----------------------------------------------------------------------- */
 body {
-  background: indianred; }
+  font-family: 'lato-black', sans-serif;
+  font-family: sans-serif;
+  font-size: 14px; }
+
+:root {
+  --main-color1: orange;
+  --main-color2: #e5e5e5;
+  --header-color: #bd1934; }
+
+.main {
+  display: flex;
+  height: 100vh; }
+  .main .main__box__left {
+    flex: 1;
+    background-color: #f5f5f5;
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+    z-index: 9;
+    position: relative; }
+    .main .main__box__left .header {
+      display: flex;
+      background: var(--header-color);
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      background: #bd1934; }
+      .main .main__box__left .header__item {
+        flex: 1; }
+        .main .main__box__left .header__item .header__item--link a {
+          display: block; }
+          .main .main__box__left .header__item .header__item--link a img {
+            width: 65px;
+            height: 65px;
+            background: #fff; }
+        .main .main__box__left .header__item .header__item--create {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          text-decoration: none;
+          color: #fff;
+          margin: 0 10px 0 0;
+          text-transform: uppercase; }
+          .main .main__box__left .header__item .header__item--create .mdi-plus {
+            margin-right: 10px; }
+          .main .main__box__left .header__item .header__item--create .mdi-menu-down {
+            margin-left: 25px; }
+          .main .main__box__left .header__item .header__item--create span {
+            cursor: default; }
+    .main .main__box__left .nav {
+      width: 100%;
+      color: #959595; }
+      .main .main__box__left .nav ul li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid #cecece;
+        position: relative;
+        flex-direction: column; }
+        .main .main__box__left .nav ul li a {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          text-decoration: none;
+          padding: 15px 0;
+          color: #959595;
+          cursor: default;
+          justify-content: space-between; }
+          .main .main__box__left .nav ul li a span {
+            display: flex;
+            align-items: center; }
+            .main .main__box__left .nav ul li a span .mdi-folder,
+            .main .main__box__left .nav ul li a span .mdi-folder-plus {
+              color: #959595;
+              padding: 0 10px; }
+          .main .main__box__left .nav ul li a span:first-letter {
+            text-transform: uppercase; }
+        .main .main__box__left .nav ul li .mdi-chevron-down {
+          padding: 0 20px 0 0;
+          cursor: pointer; }
+        .main .main__box__left .nav ul li ul.sub {
+          background: #fff;
+          z-index: 10;
+          width: 100%;
+          display: none; }
+          .main .main__box__left .nav ul li ul.sub li {
+            position: relative; }
+            .main .main__box__left .nav ul li ul.sub li a {
+              display: block;
+              color: #fff;
+              padding: 15px;
+              color: #3C3D41; }
+          .main .main__box__left .nav ul li ul.sub li:last-child {
+            border-bottom: none; }
+        .main .main__box__left .nav ul li ul.sub.open {
+          display: block; }
+  .main .main__box__right {
+    flex: 4;
+    background: var(--main-color2); }
+    .main .main__box__right--right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 10px;
+      border-bottom: 1px solid #cecece;
+      padding: 26px 0; }
+      .main .main__box__right--right h2 {
+        color: #3C3D41;
+        font-size: 17px; }
+      .main .main__box__right--right a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #3c3d41;
+        font-size: 17px; }
+        .main .main__box__right--right a .mdi-chevron-down {
+          padding: 0 0 0 15px; }

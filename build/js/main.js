@@ -1,1 +1,1 @@
-"use strict";function testGulp(t,u){return t*u}testGulp(10,10);
+"use strict";$(document).ready(function(i){i(".mdi-menu-down, .mdi-plus").on("click",function(){alert("radi!!!"),console.log("radi ili ne")}),i(".nav ul li a").on("click",function(){i(".sub").toggleClass("open"),i(this).has("span:first-child").toggleClass("active")})});
