@@ -207,8 +207,16 @@ body {
               padding: 0 10px; }
           .main .main__box__left .nav ul li a span:first-letter {
             text-transform: uppercase; }
+        .main .main__box__left .nav ul li a.active {
+          color: red;
+          background: #fff;
+          border-bottom: 1px solid #cecece; }
+          .main .main__box__left .nav ul li a.active > span {
+            color: red; }
+            .main .main__box__left .nav ul li a.active > span > .mdi-folder {
+              color: red; }
         .main .main__box__left .nav ul li .mdi-chevron-down {
-          padding: 0 20px 0 0;
+          margin: 0 20px 0 0;
           cursor: pointer; }
         .main .main__box__left .nav ul li ul.sub {
           background: #fff;
