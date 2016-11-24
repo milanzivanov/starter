@@ -106,7 +106,7 @@ body {
             text-decoration: none;
             padding: 15px 0;
             color: #959595;
-            cursor: default;
+            cursor: pointer;
             justify-content: space-between;
             span {
               display: flex;
@@ -123,28 +123,25 @@ body {
           }
           //in progress
           a.active {
-            color: red;
             background: #fff;
             border-bottom: 1px solid #cecece;
             > span {
-              color: red;
+              color: #005EBC;
               > .mdi-folder {
-                color: red;
+                color: #005EBC;
               }
             }
             span {
-              translate: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
               > i {
                 transform: rotate(180deg);
+                color: #000;
               }
             }
           }
           .mdi-chevron-down {
             margin: 0 20px 0 0;
             cursor: pointer;
-          }
-          .active.mdi-chevron-down {
-              //transform: rotate(180deg);
           }
           // sab nav
           ul.sub {
@@ -155,10 +152,44 @@ body {
             li {
               position: relative;
               a {
-                display: block;
+                //display: block;
                 color: #fff;
                 padding: 15px;
-                color: #3C3D41
+                color: #3C3D41;
+                .box {
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-between;
+                  .box_item {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    i.mdi.mdi-label-outline.mdi-24px {
+                      display: flex;
+                      span {
+                        padding: 0 0 0 10px;
+                      }
+                    }
+                    .box_item-left {
+                      flex: 1;
+                      display: flex;
+                      .box_item-part {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column-reverse;
+                        i.mdi.mdi-check-circle-outline.mdi-24px {
+                          margin: 5px 0 0 0;
+                        }
+                        i.mdi.mdi-chevron-down.mdi-24px {
+                            margin: 0 6px 0 0;
+                          align-self: flex-end;
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
             li:last-child {
