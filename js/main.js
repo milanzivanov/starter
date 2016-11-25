@@ -13,6 +13,7 @@ $(document).ready(function($) {
 
 
 $(function() {
+  // dropdown menu firs level
   $('.nav ul li a').on('click', function(e) {
     //$(".sub").toggleClass('open');
     e.preventDefault();
@@ -28,4 +29,19 @@ $(function() {
       .slideDown(300);
     }
   });
+
+
+
 });
+
+// custom select
+//Executes your code when the DOM is ready.  Acts the same as $(document).ready().
+  $(function() {
+    //Calls the selectBoxIt method on your HTML select box.
+    $("select").selectBoxIt({
+      showEffect: "fadeIn",
+      downArrowIcon: "mdi mdi-chevron-down mdi-24px"
+
+
+    });
+  });
