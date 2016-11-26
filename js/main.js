@@ -30,18 +30,17 @@ $(function() {
     }
   });
 
-
+    // custom select niceSelect
+    $('select').niceSelect();
 
 });
 
-// custom select
-//Executes your code when the DOM is ready.  Acts the same as $(document).ready().
-  $(function() {
-    //Calls the selectBoxIt method on your HTML select box.
-    $("select").selectBoxIt({
-      showEffect: "fadeIn",
-      downArrowIcon: "mdi mdi-chevron-down mdi-24px"
-
-
-    });
-  });
+// loader
+(function() {
+   // $('.k-loading-mask').css('display', 'block !important');
+   $(".is-active").show();
+   setTimeout(function () {
+      //test(); 
+      $('.is-active').hide();
+   }, 4000);
+})();

@@ -9,16 +9,22 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
-
-<link type="text/css" rel="stylesheet" href="http://gregfranko.com/jquery.selectBoxIt.js/css/jquery.selectBoxIt.css" />
-
-
+    <link rel="stylesheet" href="css/nice-select.css">
 
       <link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <link rel="icon" type="img/ico" href="favicon.ico">
 </head>
 <body>
+
+
+<!-- https://github.com/raphaelfabeni/css-loader -->
+<!-- Loader -->
+<div class="loader loader-default"></div>
+<!-- Loader active -->
+<div class="loader loader-default is-active" data-text blink></div>
+
+
   <div class="main">
     <div class="main__box__left">
       <header class="header">
@@ -67,7 +73,7 @@
                               <span>Complite</span>
                           </div>
                           <div class="box_item-part">
-                            <i class="mdi mdi-chevron-down mdi-24px"></i>
+                            <i class="mdi mdi-chevron-down mdi-24px not_active"></i>
                           </div>
                         </div>
                       </div>
@@ -90,7 +96,7 @@
                               <span>Complite</span>
                           </div>
                           <div class="box_item-part">
-                            <i class="mdi mdi-chevron-down mdi-24px cmp_icon"></i>
+                            <i class="mdi mdi-chevron-down mdi-24px not_active"></i>
                           </div>
                         </div>
                       </div>
@@ -113,7 +119,7 @@
                               <span>Complite</span>
                           </div>
                           <div class="box_item-part">
-                            <i class="mdi mdi-chevron-down mdi-24px cmp_icon"></i>
+                            <i class="mdi mdi-chevron-down mdi-24px not_active"></i>
                           </div>
                         </div>
                       </div>
@@ -136,7 +142,7 @@
                               <span>Complite</span>
                           </div>
                           <div class="box_item-part">
-                            <i class="mdi mdi-chevron-down mdi-24px cmp_icon"></i>
+                            <i class="mdi mdi-chevron-down mdi-24px not_active"></i>
                           </div>
                         </div>
                       </div>
@@ -163,7 +169,7 @@
                     <span>project 2</span>
                   </span>
                   <span>
-                    <i class="mdi mdi-chevron-down mdi-24px cmp_icon"></i>
+                    <i class="mdi mdi-chevron-down mdi-24px"></i>
                   </span>
                 </a>
               </li>
@@ -185,7 +191,7 @@
                     <span>project 4</span>
                   </span>
                   <span>
-                    <i class="mdi mdi-chevron-down mdi-24px cmp_icon"></i>
+                    <i class="mdi mdi-chevron-down mdi-24px"></i>
                   </span>
                 </a>
               </li>
@@ -249,49 +255,30 @@
       </div>
 
       <div class="select">
-        <!-- <div class="select__section selected">
-          <div class="chevron">
-            <i class="mdi mdi-chevron-down mdi-24px cmp_icon"></i>
-          </div>
-          <select>
-            <option selected value="city offices">city offices</option>
-            <option value="NS">NS</option>
-            <option value="BG">BG</option>
-            <option value="NI">NI</option>
-          </select>
-        </div>
-        <div class="select__section selected">
-          <div class="chevron">
-            <i class="mdi mdi-chevron-down mdi-24px cmp_icon"></i>
-          </div>
-          <select>
-            <option selected value="city NS">city NS</option>
-            <option value="NS">NS</option>
-            <option value="BG">BG</option>
-            <option value="NI">NI</option>
-          </select>
-        </div>
-        <div class="select__section selected">
-          <div class="chevron">
-            <i class="mdi mdi-chevron-down mdi-24px cmp_icon"></i>
-          </div>
-          <select>
-            <option selected value="offices">offices</option>
-            <option value="NS">NS</option>
-            <option value="BG">BG</option>
-            <option value="NI">NI</option>
-          </select>
-        </div> -->
+        <!-- custom select plugin niceselect -->
+        <select>
+          <option data-display="city offices">city offices 1</option>
+          <option value="1">Some option 2</option>
+          <option value="2">Some option 3</option>
+          <option value="3">Some option 4</option>
+          <option value="4">Some option 5</option>
+        </select>
 
+        <select>
+          <option data-display="city offices">city offices 1</option>
+          <option value="1">Some option 2</option>
+          <option value="2">Some option 3</option>
+          <option value="3">Some option 4</option>
+          <option value="4">Some option 5</option>
+        </select>
 
-
-        <!-- custom select -->
-
-
-
-
-
-
+        <select>
+          <option data-display="city offices">city offices 1</option>
+          <option value="1">Some option 2</option>
+          <option value="2">Some option 3</option>
+          <option value="3">Some option 4</option>
+          <option value="4">Some option 5</option>
+        </select>
 
         <a href="javascript">
           export
@@ -374,7 +361,7 @@
 
 
     <!-- http://gregfranko.com/jquery.selectBoxIt.js/index.html#GettingStarted -->
-        <select id="test" name="test">
+<!--         <select id="test" name="test">
           <div class="chevron">
             <i class="mdi mdi-chevron-down mdi-24px cmp_icon"></i>
           </div>
@@ -382,7 +369,7 @@
           <option value="a jQuery Plugin">a jQuery Plugin</option>
           <option value="a Select Box Replacement">a Select Box Replacement</option>
           <option value="a Stateful UI Widget">a Stateful UI Widget</option>
-        </select>
+        </select> -->
 
 
   </div>
@@ -398,22 +385,8 @@
         window.jQuery || document.write("<script src='node_modules/jQuery/jquery.min.js'><\/script>");
     </script>
 
-
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-    <script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
-
-
-
-    <script src="js/customSelect.jquery.js">
+    <script src="js/niceSelect.jquery.js">
     </script>
-
-
-
-
-
-
 
     <script src="js/main.js"></script>
 </body>
