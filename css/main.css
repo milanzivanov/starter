@@ -284,15 +284,15 @@ body {
       padding: 26px 0; }
       .main .main__box__right .main__box__right--right h2 {
         color: #3C3D41;
-        font-size: 17px; }
+        font-size: 24px; }
       .main .main__box__right .main__box__right--right a {
         text-decoration: none;
         display: flex;
         align-items: center;
         color: #3c3d41;
-        font-size: 17px; }
+        font-size: 18px; }
         .main .main__box__right .main__box__right--right a .mdi-chevron-down {
-          padding: 0 0 0 15px; }
+          padding: 0 0 0 30px; }
   .main .container {
     width: 100%; }
     .main .container .container__date {
@@ -301,9 +301,11 @@ body {
       .main .container .container__date p {
         display: inline-block;
         padding: 5px;
+        font-size: 16px;
+        line-height: 22px;
         color: #3C3D41; }
         .main .container .container__date p:first-child {
-          padding-right: 30px; }
+          padding-right: 50px; }
         .main .container .container__date p:nth-child(2) {
           padding-right: 20px; }
       .main .container .container__date a {
@@ -313,25 +315,32 @@ body {
         text-decoration: none;
         border-radius: 20px;
         color: #6F7C82;
-        border: 1px solid #cecece; }
+        border: 1px solid #cecece;
+        font-size: 16px; }
   .main .select {
     display: flex;
     margin: 10px 20px;
-    position: relative; }
+    position: relative;
+    font-size: 16px; }
     .main .select .nice-select {
-      margin: 0 15px 0 0;
-      color: #999999;
-      min-width: 140px; }
+      margin: 0 20px 0 0;
+      color: #999;
+      min-width: 210px; }
       .main .select .nice-select:after {
         height: 8px;
         width: 8px; }
+      .main .select .nice-select ul.list {
+        min-width: 207px; }
+        .main .select .nice-select ul.list a {
+          font-size: 16px; }
     .main .select a {
       position: absolute;
       right: 0;
       display: flex;
       align-items: center;
       text-decoration: none;
-      color: #3c3d41; }
+      color: #3c3d41;
+      font-size: 16px; }
       .main .select a .cmp_icon {
         padding: 0 0 0 15px; }
   .main .table {
@@ -345,10 +354,16 @@ body {
         padding: 15px; }
       .main .table .select_section th {
         color: #6F7C82; }
+        .main .table .select_section th:nth-child(2) {
+          padding: 15px 40px; }
+      .main .table .select_section td {
+        color: #333;
+        border-right: 1px solid #dddddd; }
+        .main .table .select_section td:nth-child(2) {
+          text-align: right; }
       .main .table .select_section td, .main .table .select_section th {
-        border: 1px solid #dddddd;
         text-align: left;
-        padding: 15px 5px;
+        padding: 15px 40px;
         width: 85%;
         white-space: nowrap; }
       .main .table .select_section tr:nth-child(even) {

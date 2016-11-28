@@ -229,21 +229,21 @@ body {
       padding: 26px 0;
       h2 {
         color: #3C3D41;
-        font-size: 17px;
+        font-size: 24px;
       }
       a {
         text-decoration: none;
         display: flex;
         align-items: center;
         color: #3c3d41;
-        font-size: 17px;
+        font-size: 18px;
         .mdi-chevron-down {
-           padding: 0 0 0 15px;
+           padding: 0 0 0 30px;
         }
       }
     }
   }
-  // data field
+  // date field
   .container {
     width: 100%;
     .container__date {
@@ -252,9 +252,11 @@ body {
       p {
         display: inline-block;
         padding: 5px;
-        color: #3C3D41;
+        font-size : 16px;
+        line-height : 22px;
+        color : #3C3D41;
         &:first-child {
-          padding-right: 30px;
+          padding-right: 50px;
         }
         &:nth-child(2) {
           padding-right: 20px;
@@ -268,6 +270,7 @@ body {
         border-radius: 20px;
         color: #6F7C82;
         border: 1px solid #cecece;
+        font-size: 16px;
       }
     }
   }
@@ -276,14 +279,21 @@ body {
     display: flex;
     margin: 10px 20px;
     position: relative;
+    font-size : 16px;
     // custom selected plagin niceSelect
     .nice-select {
-        margin: 0 15px 0 0;
-        color: #999999;
-        min-width: 140px;
+        margin: 0 20px 0 0;
+        color: #999;
+        min-width: 210px;
         &:after {
           height: 8px;
           width: 8px;
+      }
+      ul.list {
+        min-width: 207px;
+        a {
+          font-size : 16px;
+        }
       }
     }
     a {
@@ -293,6 +303,7 @@ body {
       align-items: center;
       text-decoration: none;
       color: #3c3d41;
+      font-size : 16px;
       .cmp_icon {
         padding: 0 0 0 15px;
       }
@@ -312,11 +323,20 @@ body {
       }
       th {
         color: #6F7C82;
+        &:nth-child(2) {
+          padding: 15px 40px;
+        }
+      }
+      td {
+        color: #333;
+        border-right: 1px solid #dddddd;
+        &:nth-child(2) {
+          text-align: right;
+        }
       }
       td, th {
-          border: 1px solid #dddddd;
           text-align: left;
-          padding: 15px 5px;
+          padding: 15px 40px;
           width: 85%;
           white-space: nowrap;
       }
@@ -329,9 +349,7 @@ body {
 
 }
 
-
 // lader
-
 .loader {
   color: #fff;
   position: fixed;
@@ -353,7 +371,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-    
+
   transition: all 5s ease-in-out;
 }
 @keyframes rotation {

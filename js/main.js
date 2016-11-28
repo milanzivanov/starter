@@ -11,7 +11,6 @@ $(document).ready(function($) {
     });
 });
 
-
 $(function() {
   // dropdown menu firs level
   $('.nav ul li a').on('click', function(e) {
@@ -40,7 +39,7 @@ $(function() {
    // $('.k-loading-mask').css('display', 'block !important');
    $(".is-active").show();
    setTimeout(function () {
-      //test(); 
+      //test();
       $('.is-active').hide();
    }, 4000);
 })();
