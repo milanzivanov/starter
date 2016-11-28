@@ -260,6 +260,9 @@ body {
                       flex-direction: column-reverse; }
                       .main .main__box__left .nav ul li ul.sub li a .box .box_item .box_item-left .box_item-part i.mdi.mdi-check-circle-outline.mdi-24px {
                         margin: 5px 0 0 0; }
+                      .main .main__box__left .nav ul li ul.sub li a .box .box_item .box_item-left .box_item-part .cmp_icon {
+                        margin: 5px 0 0 0;
+                        display: flex; }
                       .main .main__box__left .nav ul li ul.sub li a .box .box_item .box_item-left .box_item-part i.mdi.mdi-chevron-down.mdi-24px {
                         margin: 0 6px 0 0;
                         align-self: flex-end; }
@@ -267,11 +270,16 @@ body {
                         color: #959595; }
                       .main .main__box__left .nav ul li ul.sub li a .box .box_item .box_item-left .box_item-part:nth-child(1) {
                         flex: 1 1 100%;
-                        padding: 0 0 0 50px; }
+                        padding: 0 0 0 50px;
+                        color: grey; }
           .main .main__box__left .nav ul li ul.sub li:last-child {
             border-bottom: none; }
         .main .main__box__left .nav ul li ul.sub.open {
           display: block; }
+        .main .main__box__left .nav ul li .sub li a .box_item .cmp_icon {
+          display: flex; }
+          .main .main__box__left .nav ul li .sub li a .box_item .cmp_icon span {
+            padding: 0 0 0 10px; }
   .main .main__box__right {
     flex: 4;
     background: var(--main-color2); }
@@ -316,12 +324,14 @@ body {
         border-radius: 20px;
         color: #6F7C82;
         border: 1px solid #cecece;
-        font-size: 16px; }
+        font-size: 16px;
+        background-color: #cecece; }
   .main .select {
     display: flex;
     margin: 10px 20px;
     position: relative;
-    font-size: 16px; }
+    font-size: 16px;
+    align-items: center; }
     .main .select .nice-select {
       margin: 0 20px 0 0;
       color: #999;
@@ -329,9 +339,9 @@ body {
       .main .select .nice-select:after {
         height: 8px;
         width: 8px; }
-      .main .select .nice-select ul.list {
+      .main .select .nice-select .list {
         min-width: 207px; }
-        .main .select .nice-select ul.list a {
+        .main .select .nice-select .list a {
           font-size: 16px; }
     .main .select a {
       position: absolute;
@@ -346,7 +356,7 @@ body {
   .main .table {
     padding: 20px; }
     .main .table .select_section {
-      padding: 15px;
+      padding: 0 0 0 15px;
       border: 1px solid #dddddd; }
       .main .table .select_section table {
         border-collapse: collapse;

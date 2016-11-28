@@ -121,7 +121,7 @@ body {
               text-transform: uppercase;
             }
           }
-          //in progress
+          // active dropdown firs level
           a.active {
             background: #fff;
             border-bottom: 1px solid #cecece;
@@ -189,6 +189,10 @@ body {
                         i.mdi.mdi-check-circle-outline.mdi-24px {
                           margin: 5px 0 0 0;
                         }
+                        .cmp_icon {
+                          margin: 5px 0 0 0;
+                          display: flex;
+                        }
                         i.mdi.mdi-chevron-down.mdi-24px {
                             margin: 0 6px 0 0;
                           align-self: flex-end;
@@ -199,6 +203,8 @@ body {
                         &:nth-child(1) {
                           flex: 1 1 100%;
                           padding: 0 0 0 50px;
+                          // color icon svg
+                          color: grey;
                         }
                       }
                     }
@@ -213,6 +219,32 @@ body {
           ul.sub.open {
             display: block;
           }
+          // second dropdown level
+          .sub {
+            li {
+              a {
+                .box_item {
+                  .cmp_icon {
+                    display: flex;
+                    span {
+                      padding: 0 0 0 10px;
+                    }
+                    .infoSection__icon {
+                        // display: block;
+                        // fill: #6F7072;
+                        // margin: 0 auto;
+                        // width: 75%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+
+
+
+
         }
       }
     }
@@ -271,6 +303,7 @@ body {
         color: #6F7C82;
         border: 1px solid #cecece;
         font-size: 16px;
+        background-color: #cecece;
       }
     }
   }
@@ -280,6 +313,7 @@ body {
     margin: 10px 20px;
     position: relative;
     font-size : 16px;
+    align-items: center;
     // custom selected plagin niceSelect
     .nice-select {
         margin: 0 20px 0 0;
@@ -289,7 +323,7 @@ body {
           height: 8px;
           width: 8px;
       }
-      ul.list {
+      .list {
         min-width: 207px;
         a {
           font-size : 16px;
@@ -314,7 +348,7 @@ body {
   .table {
     padding: 20px;
     .select_section {
-      padding: 15px;
+      padding: 0 0 0 15px;
       border: 1px solid #dddddd;
       table {
         border-collapse: collapse;
@@ -337,8 +371,7 @@ body {
       td, th {
           text-align: left;
           padding: 15px 40px;
-          width: 85%;
-          white-space: nowrap;
+          width: 85%;          white-space: nowrap;
       }
       tr:nth-child(even) {
           background-color: #F7F7F7;
