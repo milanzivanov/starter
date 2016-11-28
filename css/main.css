@@ -276,10 +276,15 @@ body {
             border-bottom: none; }
         .main .main__box__left .nav ul li ul.sub.open {
           display: block; }
-        .main .main__box__left .nav ul li .sub li a .box_item .cmp_icon {
-          display: flex; }
-          .main .main__box__left .nav ul li .sub li a .box_item .cmp_icon span {
+        .main .main__box__left .nav ul li .sub li a .box_item {
+          display: flex;
+          flex-direction: row-reverse; }
+          .main .main__box__left .nav ul li .sub li a .box_item span {
             padding: 0 0 0 10px; }
+          .main .main__box__left .nav ul li .sub li a .box_item .infoSection__icon {
+            width: 24px;
+            height: 24px;
+            fill: aqua; }
   .main .main__box__right {
     flex: 4;
     background: var(--main-color2); }

@@ -224,18 +224,16 @@ body {
             li {
               a {
                 .box_item {
-                  .cmp_icon {
                     display: flex;
+                    flex-direction: row-reverse;
                     span {
                       padding: 0 0 0 10px;
                     }
                     .infoSection__icon {
-                        // display: block;
-                        // fill: #6F7072;
-                        // margin: 0 auto;
-                        // width: 75%;
+                      width: 24px;
+                      height: 24px;
+                      fill: aqua;
                     }
-                  }
                 }
               }
             }
