@@ -348,7 +348,18 @@ body {
         min-width: 207px; }
         .main .select .nice-select .list a {
           font-size: 16px; }
-    .main .select a {
+    .main .select .select-bg {
+      background: transparent;
+      border: none;
+      margin: 0;
+      position: relative;
+      display: flex;
+      align-items: center; }
+      .main .select .select-bg .current {
+        color: #3c3d41;
+        position: absolute;
+        right: 40px; }
+    .main .select .select__right {
       position: absolute;
       right: 0;
       display: flex;
@@ -356,8 +367,6 @@ body {
       text-decoration: none;
       color: #3c3d41;
       font-size: 16px; }
-      .main .select a .cmp_icon {
-        padding: 0 0 0 15px; }
   .main .table {
     padding: 20px; }
     .main .table .select_section {
