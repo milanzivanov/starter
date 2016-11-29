@@ -240,15 +240,14 @@ body {
                 .main .main__box__left .nav ul li ul.sub li a .box .box_item {
                   flex: 1;
                   display: flex;
-                  align-items: center; }
+                  align-items: center;
+                  justify-content: flex-end; }
                   .main .main__box__left .nav ul li ul.sub li a .box .box_item i.mdi.mdi-label-outline.mdi-24px {
                     display: flex; }
                     .main .main__box__left .nav ul li ul.sub li a .box .box_item i.mdi.mdi-label-outline.mdi-24px span {
                       padding: 0 0 0 10px; }
                   .main .main__box__left .nav ul li ul.sub li a .box .box_item .mdi.mdi-plus.mdi-24px {
                     display: flex; }
-                    .main .main__box__left .nav ul li ul.sub li a .box .box_item .mdi.mdi-plus.mdi-24px span {
-                      padding: 0 0 0 10px; }
                   .main .main__box__left .nav ul li ul.sub li a .box .box_item .box_item-left {
                     flex: 1;
                     display: flex; }
@@ -258,11 +257,13 @@ body {
                       align-items: center;
                       justify-content: center;
                       flex-direction: column-reverse; }
-                      .main .main__box__left .nav ul li ul.sub li a .box .box_item .box_item-left .box_item-part i.mdi.mdi-check-circle-outline.mdi-24px {
-                        margin: 5px 0 0 0; }
-                      .main .main__box__left .nav ul li ul.sub li a .box .box_item .box_item-left .box_item-part .cmp_icon {
-                        margin: 5px 0 0 0;
-                        display: flex; }
+                      .main .main__box__left .nav ul li ul.sub li a .box .box_item .box_item-left .box_item-part svg.icon {
+                        width: 24px;
+                        height: 24px;
+                        fill: blueviolet;
+                        -webkit-font-smoothing: antialiased; }
+                      .main .main__box__left .nav ul li ul.sub li a .box .box_item .box_item-left .box_item-part span {
+                        padding: 0 0 5px 0; }
                       .main .main__box__left .nav ul li ul.sub li a .box .box_item .box_item-left .box_item-part i.mdi.mdi-chevron-down.mdi-24px {
                         margin: 0 6px 0 0;
                         align-self: flex-end; }
@@ -271,7 +272,13 @@ body {
                       .main .main__box__left .nav ul li ul.sub li a .box .box_item .box_item-left .box_item-part:nth-child(1) {
                         flex: 1 1 100%;
                         padding: 0 0 0 50px;
-                        color: grey; }
+                        color: #959595;
+                        display: flex;
+                        justify-content: center; }
+                  .main .main__box__left .nav ul li ul.sub li a .box .box_item svg.icon {
+                    width: 24px;
+                    height: 24px;
+                    fill: blueviolet; }
           .main .main__box__left .nav ul li ul.sub li:last-child {
             border-bottom: none; }
         .main .main__box__left .nav ul li ul.sub.open {

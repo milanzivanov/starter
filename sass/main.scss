@@ -153,7 +153,6 @@ body {
             li {
               position: relative;
               a {
-                //display: block;
                 color: #fff;
                 padding: 15px;
                 color: #3C3D41;
@@ -165,6 +164,7 @@ body {
                     flex: 1;
                     display: flex;
                     align-items: center;
+                    justify-content: flex-end;
                     i.mdi.mdi-label-outline.mdi-24px {
                       display: flex;
                       span {
@@ -174,7 +174,9 @@ body {
                     .mdi.mdi-plus.mdi-24px {
                       display: flex;
                       span {
-                        padding: 0 0 0 10px;
+                        //padding: 0 0 0 10px;
+                        // http://codepen.io/milanodituti/pen/ENbYzx
+                        // https://icomoon.io/#docs/inline-svg
                       }
                     }
                     .box_item-left {
@@ -186,16 +188,18 @@ body {
                         align-items: center;
                         justify-content: center;
                         flex-direction: column-reverse;
-                        i.mdi.mdi-check-circle-outline.mdi-24px {
-                          margin: 5px 0 0 0;
+                        svg.icon {
+                            width: 24px;
+                            height: 24px;
+                            fill: blueviolet;
+                            -webkit-font-smoothing: antialiased;
                         }
-                        .cmp_icon {
-                          margin: 5px 0 0 0;
-                          display: flex;
+                        span {
+                          padding: 0 0 5px 0;
                         }
                         i.mdi.mdi-chevron-down.mdi-24px {
                             margin: 0 6px 0 0;
-                          align-self: flex-end;
+                            align-self: flex-end;
                         }
                         .not_active {
                             color: #959595;
@@ -203,10 +207,16 @@ body {
                         &:nth-child(1) {
                           flex: 1 1 100%;
                           padding: 0 0 0 50px;
-                          // color icon svg
-                          color: grey;
+                          color: #959595;
+                          display: flex;
+                          justify-content: center;
                         }
                       }
+                    }
+                    svg.icon {
+                      width: 24px;
+                      height: 24px;
+                      fill: blueviolet;
                     }
                   }
                 }
