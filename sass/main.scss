@@ -55,6 +55,10 @@ body {
       align-items: center;
       padding: 5px;
       background: #bd1934;
+
+      @include css-triangle(red, right);
+
+
       &__item { // same as a .header__item
         flex: 1;
         .header__item--link {
@@ -189,12 +193,6 @@ body {
                         justify-content: center;
                         flex-direction: column-reverse;
                         .icon {
-                          display: inline-block;
-                          //color: #444444;
-                          //width: 1em;
-                          //height: 1em;
-                          //fill: currentColor;
-                          //fill: blueviolet;
                           -webkit-font-smoothing: antialiased;
                           // Also note that by using -webkit-font-smoothing: antialiased; in your CSS, you can get better results.
                         }
@@ -287,12 +285,12 @@ body {
                         }
                         .mdi.mdi-chevron-down.mdi-24px.not_active {
                           color: #000 !important;
+                          transform: rotate(180deg);
                         }
                       }
                     }
                   }
                 }
-
               }
             }
           }
