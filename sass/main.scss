@@ -121,7 +121,7 @@ body {
               text-transform: uppercase;
             }
           }
-          // active dropdown firs level
+          // active dropdown first level
           a.active {
             background: #fff;
             border-bottom: 1px solid #cecece;
@@ -188,14 +188,28 @@ body {
                         align-items: center;
                         justify-content: center;
                         flex-direction: column-reverse;
-                        svg.icon {
-                            width: 24px;
-                            height: 24px;
-                            fill: blueviolet;
-                            -webkit-font-smoothing: antialiased;
+                        .icon {
+                          display: inline-block;
+                          //color: #444444;
+                          //width: 1em;
+                          //height: 1em;
+                          //fill: currentColor;
+                          //fill: blueviolet;
+                          -webkit-font-smoothing: antialiased;
+                          // Also note that by using -webkit-font-smoothing: antialiased; in your CSS, you can get better results.
+                        }
+                        .icon__svg--sprite {
+                          width: 24px;
+                          height: 24px;
+                          stroke: #959595;
+                        }
+                        .icon-Pending_not-selected {
+                          //stroke: green;
+                          //stroke-width: 5px;
+                          //fill: lighten(#cc8ac1, 20%);
                         }
                         span {
-                          padding: 0 0 5px 0;
+                          padding: 0 0 5px 5px;
                         }
                         i.mdi.mdi-chevron-down.mdi-24px {
                             margin: 0 6px 0 0;
@@ -216,7 +230,8 @@ body {
                     svg.icon {
                       width: 24px;
                       height: 24px;
-                      fill: blueviolet;
+                      fill: #3C3D41;
+                      margin-right: 5px;
                     }
                   }
                 }
@@ -226,9 +241,6 @@ body {
               border-bottom: none;
             }
           }
-          ul.sub.open {
-            display: block;
-          }
           // second dropdown level
           .sub {
             li {
@@ -237,22 +249,53 @@ body {
                     display: flex;
                     flex-direction: row-reverse;
                     span {
-                      padding: 0 0 0 10px;
+                        white-space: nowrap;
+                        color: #3C3D41;
                     }
-                    .infoSection__icon {
-                      width: 24px;
-                      height: 24px;
-                      fill: aqua;
+
+                  }
+                  .box_item--right {
+                    justify-content: flex-start !important;
+                    .cmp_icon--arrow {
+                      margin: 0 5px 0 0;
+                      color: #959595;
                     }
+                  }
+              }
+
+              // active dropdown second level
+              a.active {
+                background: #fff;
+                border-bottom: 1px solid #cecece;
+                .cmp_icon--rotate {
+                  transition: all 0.3s ease-in-out;
+                  //transform: rotate(180deg);
+                  color: #005EBC;
+                  span {
+                    color: #005EBC;
+                  }
                 }
+                .box_item {
+                  .box_item-left {
+                    color: blue;
+                    .box_item-part {
+                      .icon__svg--sprite {
+                        stroke: #005EBC !important;
+                      }
+                      span {
+                        color: #005EBC;
+                        }
+                        .mdi.mdi-chevron-down.mdi-24px.not_active {
+                          color: #000 !important;
+                        }
+                      }
+                    }
+                  }
+                }
+
               }
             }
           }
-
-
-
-
-
         }
       }
     }
@@ -396,7 +439,6 @@ body {
           color: #000;
       }
     }
-  }
 
 }
 
@@ -815,3 +857,40 @@ body {
     height: 84px
   }
 }
+
+
+
+
+
+
+
+// a.active {
+//   background: #fff;
+//   border-bottom: 1px solid #cecece;
+//   .cmp_icon--rotate {
+//     transition: all 0.3s ease-in-out;
+//     //transform: rotate(180deg);
+//     color: red;
+//     span {
+//       color: red;
+//     }
+//   }
+//   .box_item {
+//     color: red;
+//     .box_item-left {
+//       color: red;
+//       .box_item-part {
+//         .icon__svg--sprite {
+//           stroke: red !important;
+//         }
+//         span {
+//           color: red;
+//           }
+//         }
+//         .not-active {
+//           color: red;
+//         }
+//       }
+//     }
+//   }
+// }
