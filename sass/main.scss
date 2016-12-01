@@ -27,6 +27,17 @@
 @import "partials/header";
 /* ----------------- scss main
 ----------------------------------------------------------------------- */
+
+svg.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+
 body {
   font-family: 'lato-black', sans-serif;
   font-family: sans-serif;
@@ -55,9 +66,6 @@ body {
       align-items: center;
       padding: 5px;
       background: #bd1934;
-
-      @include css-triangle(red, right);
-
 
       &__item { // same as a .header__item
         flex: 1;
@@ -178,9 +186,6 @@ body {
                     .mdi.mdi-plus.mdi-24px {
                       display: flex;
                       span {
-                        //padding: 0 0 0 10px;
-                        // http://codepen.io/milanodituti/pen/ENbYzx
-                        // https://icomoon.io/#docs/inline-svg
                       }
                     }
                     .box_item-left {
@@ -199,12 +204,11 @@ body {
                         .icon__svg--sprite {
                           width: 24px;
                           height: 24px;
-                          stroke: #959595;
+                          fill: #959595;
                         }
                         .icon-Pending_not-selected {
                           //stroke: green;
                           //stroke-width: 5px;
-                          //fill: lighten(#cc8ac1, 20%);
                         }
                         span {
                           padding: 0 0 5px 5px;
@@ -278,12 +282,13 @@ body {
                     color: blue;
                     .box_item-part {
                       .icon__svg--sprite {
-                        stroke: #005EBC !important;
+                        fill: #005EBC !important;
                       }
                       span {
                         color: #005EBC;
                         }
                         .mdi.mdi-chevron-down.mdi-24px.not_active {
+                          transition: all 0.3s ease-in-out;
                           color: #000 !important;
                           transform: rotate(180deg);
                         }

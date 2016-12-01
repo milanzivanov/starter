@@ -19,6 +19,9 @@
 <body>
 
 
+
+
+
 <!-- <svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <symbol id="icon-home" viewBox="0 0 1024 1024">
@@ -44,10 +47,9 @@
 
 <!-- https://github.com/raphaelfabeni/css-loader -->
 <!-- Loader -->
-<!-- <div class="loader loader-default"></div> -->
+<div class="loader loader-default"></div>
 <!-- Loader active -->
-<!-- <div class="loader loader-default is-active" data-text blink></div> -->
-
+<div class="loader loader-default is-active" data-text blink></div>
 
   <div class="main">
     <div class="main__box__left">
@@ -128,19 +130,30 @@
                     <!-- third level dropdown -->
                     <ul class="sub">
                       <li>
-                        <a href="javascript:;">level 3 click</a>
-                        <!-- forth level dropdown -->
-                        <ul class="sub">
-                          <li><a href="javascript:;">level 4</a></li>
-                          <li><a href="javascript:;">level 4</a></li>
-                          <li><a href="javascript:;">level 4</a></li>
-                        </ul>
+                        <a href="javascript:;">
+                          <div class="box">
+                            <div class="box_item">
+                            <span>Assessment Design level 3</span>
+                              <svg class="icon icon-Assessment-design_not-selected icon__svg--sprite">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg/svg_sprites.svg#icon-Assessment-design_not-selected">
+                                </use>
+                              </svg>
+                            </div>
+                          </div>
+                        </a>
                       </li>
                       <li>
-                        <a href="javascript:;">level 3</a>
-                      </li>
-                      <li>
-                        <a href="javascript:;">level 3</a>
+                        <a href="javascript:;">
+                          <div class="box">
+                            <div class="box_item">
+                                <span>Assessment Monitoring level 3</span>
+                                <svg class="icon icon-Assessment-monitoring_not-selected icon__svg--sprite">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg/svg_sprites.svg#icon-Assessment-monitoring_not-selected">
+                                  </use>
+                                </svg>
+                            </div>
+                          </div>
+                        </a>
                       </li>
                     </ul>
 
@@ -218,11 +231,6 @@
                       <div class="box_item">
                         <div class="box_item-left">
                           <div class="box_item-part">
-
-                                <!-- ===== SVG fragment identiffiers ===== -->
-                                <!-- u ovom slucaju posto je codepan pa ne mogu lokalno da ubacim svg zato se ne vide sprajtovi -->
-                                <!-- <img src="img/svg-sprites.svg#svgView(viewBox(72, 0, 24, 24))" alt="Icon Create" class="infoSection__icon" /> -->
-
                                 <svg class="icon icon-Pending_not-selected icon__svg--sprite">
                                   <use xlink:href="svg/svg_sprites.svg#icon-Pending_not-selected"></use>
                                 </svg>
@@ -248,14 +256,10 @@
                       <div class="box_item">
                         <div class="box_item-left">
                           <div class="box_item-part">
-                            <!-- <i class="mdi mdi-check-circle-outline mdi-24px cmp_icon">
-                            <img class="cmp_icon" src="img/Draft_not-selected.svg" alt="draft"><span>Draft</span> -->
-
                             <svg class="icon icon-Draft_not-selected icon__svg--sprite">
                               <use xlink:href="svg/svg_sprites.svg#icon-Draft_not-selected"></use>
                             </svg>
                             <span>Draft</span>
-
                           </div>
                           <div class="box_item-part">
                             <i class="mdi mdi-chevron-down mdi-24px not_active"></i>
@@ -321,13 +325,6 @@
                     <i class="mdi mdi-chevron-down mdi-24px cmp_icon"></i>
                   </span>
                 </a>
-                <ul class="sub">
-                  <li><a href="javascript:;">text text</a></li>
-                  <li><a href="javascript:;">text text</a></li>
-                  <li><a href="javascript:;">text text</a></li>
-                  <li><a href="javascript:;">text text</a></li>
-                  <li><a href="javascript:;">text text</a></li>
-                </ul>
               </li>
               <li>
                 <a href="javascript:;">

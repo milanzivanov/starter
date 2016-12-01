@@ -94,6 +94,8 @@ html {
 ------------------------------------------------------------------------------*/
 /* ----------------- Media queris
 ----------------------------------------------------------------------- */
+/* ----------------- next mixin
+----------------------------------------------------------------------- */
 /* ----------------- Helpers
 ----------------------------------------------------------------------- */
 /* ----------------- IE
@@ -128,6 +130,14 @@ html {
 ----------------------------------------------------------------------- */
 /* ----------------- scss main
 ----------------------------------------------------------------------- */
+svg.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor; }
+
 body {
   font-family: 'lato-black', sans-serif;
   font-family: sans-serif;
@@ -262,7 +272,7 @@ body {
                       .main .main__box__left .nav ul li ul.sub li a .box .box_item .box_item-left .box_item-part .icon__svg--sprite {
                         width: 24px;
                         height: 24px;
-                        stroke: #959595; }
+                        fill: #959595; }
                       .main .main__box__left .nav ul li ul.sub li a .box .box_item .box_item-left .box_item-part span {
                         padding: 0 0 5px 5px; }
                       .main .main__box__left .nav ul li ul.sub li a .box .box_item .box_item-left .box_item-part i.mdi.mdi-chevron-down.mdi-24px {
@@ -305,10 +315,11 @@ body {
           .main .main__box__left .nav ul li .sub li a.active .box_item .box_item-left {
             color: blue; }
             .main .main__box__left .nav ul li .sub li a.active .box_item .box_item-left .box_item-part .icon__svg--sprite {
-              stroke: #005EBC !important; }
+              fill: #005EBC !important; }
             .main .main__box__left .nav ul li .sub li a.active .box_item .box_item-left .box_item-part span {
               color: #005EBC; }
             .main .main__box__left .nav ul li .sub li a.active .box_item .box_item-left .box_item-part .mdi.mdi-chevron-down.mdi-24px.not_active {
+              transition: all 0.3s ease-in-out;
               color: #000 !important;
               transform: rotate(180deg); }
 
