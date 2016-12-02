@@ -130,13 +130,13 @@ html {
 ----------------------------------------------------------------------- */
 /* ----------------- scss main
 ----------------------------------------------------------------------- */
-svg.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor; }
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto; }
 
 body {
   font-family: 'lato-black', sans-serif;
@@ -322,6 +322,23 @@ body {
               transition: all 0.3s ease-in-out;
               color: #000 !important;
               transform: rotate(180deg); }
+        .main .main__box__left .nav ul li .sub li .sub li a .box .box_item span {
+          color: #959595; }
+        .main .main__box__left .nav ul li .sub li .sub li a .box .box_item .cmp_icon--space {
+          margin-left: 15px;
+          fill: #959595; }
+        .main .main__box__left .nav ul li .sub li .sub li a .box .box_item .box_item--right .cmp_icon--arrow {
+          color: red; }
+        .main .main__box__left .nav ul li .sub li .sub li a.active .box .box_item span {
+          color: #000; }
+        .main .main__box__left .nav ul li .sub li .sub li a.active .box .box_item .icon__svg--sprite {
+          fill: #005EBC; }
+          .main .main__box__left .nav ul li .sub li .sub li a.active .box .box_item .icon__svg--sprite:focus {
+            fill: red; }
+        .main .main__box__left .nav ul li .sub li .sub li a.active .box .box_item .cmp_icon--arrow {
+          transition: all 0.3s ease-in-out;
+          transform: rotate(180deg);
+          color: #000; }
 
 .main__box__right {
   flex: 4;
@@ -360,7 +377,7 @@ body {
         padding-right: 50px; }
       .container .container__date p:nth-child(2) {
         padding-right: 20px; }
-    .container .container__date a {
+    .container .container__date .open-popup-link {
       background-color: #fff;
       display: inline-block;
       padding: 10px;
@@ -369,7 +386,11 @@ body {
       color: #6F7C82;
       border: 1px solid #cecece;
       font-size: 16px;
-      background-color: #cecece; }
+      background-color: #cecece;
+      outline: none;
+      transition: all 0.3s ease-in-out; }
+      .container .container__date .open-popup-link:hover {
+        color: #fff; }
 
 .select {
   display: flex;

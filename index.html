@@ -12,37 +12,21 @@
     <link rel="stylesheet" href="css/nice-select.css">
 
       <link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <link rel="icon" type="img/ico" href="favicon.ico">
 
 </head>
+
 <body>
 
-
-
-
-
-<!-- <svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <symbol id="icon-home" viewBox="0 0 1024 1024">
-    	<title>home</title>
-    	<path class="path1" d="M512 96l-512 512 96 96 96-96v416h256v-192h128v192h256v-416l96 96 96-96-512-512zM512 512c-35.346 0-64-28.654-64-64s28.654-64 64-64c35.346 0 64 28.654 64 64s-28.654 64-64 64z"></path>
-    </symbol>
-  </defs>
-</svg>
-
-<svg class="icon icon-home">
-  <use xlink:href="#icon-home"></use>
-</svg>
-<span class="mls"> icon-home</span> -->
-
-<!-- sara svg -->
-<!-- <svg class="twitter-icon">
-  <use xlink:href="path/to/icons.svg#twitter-icon"></use>
-<svg> -->
-<!-- <svg class="twitter-icon">
-  <use xlink:href="#twitter-icon"></use>
-<svg> -->
+  <!-- Popup itself -->
+  <div id="test-popup" class="white-popup mfp-hide">
+    Content here...
+  </div>
 
 
 <!-- https://github.com/raphaelfabeni/css-loader -->
@@ -82,13 +66,14 @@
                   <i class="mdi mdi-chevron-down mdi-24px cmp_icon"></i>
                 </span>
               </a>
+              <!-- dropdown level 1 -->
               <ul class="sub">
                 <li>
                   <a href="javascript:;">
                     <div class="box">
                       <div class="box_item">
                         <i class="mdi mdi-label-outline mdi-24px cmp_icon--rotate">
-                          <span>Servey 1</span>
+                          <span>Servey 1 level 1</span>
                         </i>
                       </div>
                       <div class="box_item">
@@ -99,7 +84,6 @@
                                 <use xlink:href="svg/svg_sprites.svg#icon-Complete_not-selected"></use>
                               </svg>
                               <span>Complite</span>
-
                           </div>
                           <div class="box_item-part">
                             <i class="mdi mdi-chevron-down mdi-24px not_active"></i>
@@ -108,14 +92,13 @@
                       </div>
                     </div>
                   </a>
-
               <!-- =============== dropdown level 2 ============== -->
               <ul class="sub">
                 <li>
                   <a href="javascript:;">
                     <div class="box">
                       <div class="box_item">
-                      <span>Assessment Design 2 level 2</span>
+                      <span>Assessment Design level 2</span>
                         <svg class="icon icon-Assessment-design_not-selected icon__svg--sprite">
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg/svg_sprites.svg#icon-Assessment-design_not-selected">
                           </use>
@@ -127,16 +110,15 @@
                     </div>
                   </a>
 
-                    <!-- third level dropdown -->
+                    <!-- =============== dropdown level 3 ============== -->
                     <ul class="sub">
                       <li>
                         <a href="javascript:;">
                           <div class="box">
                             <div class="box_item">
-                            <span>Assessment Design level 3</span>
-                              <svg class="icon icon-Assessment-design_not-selected icon__svg--sprite">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg/svg_sprites.svg#icon-Assessment-design_not-selected">
-                                </use>
+                            <span>Participation Monitoring level 3</span>
+                              <svg class="icon icon-email-outline cmp_icon--space">
+                                <use xlink:href="svg/svg_sprites.svg#icon-email-outline"></use>
                               </svg>
                             </div>
                           </div>
@@ -146,18 +128,15 @@
                         <a href="javascript:;">
                           <div class="box">
                             <div class="box_item">
-                                <span>Assessment Monitoring level 3</span>
-                                <svg class="icon icon-Assessment-monitoring_not-selected icon__svg--sprite">
-                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg/svg_sprites.svg#icon-Assessment-monitoring_not-selected">
-                                  </use>
+                                <span>E-Emails & Campaigns level 3</span>
+                                <svg class="icon icon-email-outline cmp_icon--space">
+                                  <use xlink:href="svg/svg_sprites.svg#icon-email-outline"></use>
                                 </svg>
                             </div>
                           </div>
                         </a>
                       </li>
                     </ul>
-
-
                 </li>
                 <li>
                   <a href="javascript:;">
@@ -179,7 +158,7 @@
                   <a href="javascript:;">
                     <div class="box">
                       <div class="box_item">
-                        <span>Results level 2</span>
+                        <span>Results level 1</span>
                         <svg class="icon icon-Results_not-selected">
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg/svg_sprites.svg#icon-Results_not-selected">
                           </use>
@@ -192,14 +171,14 @@
                   </a>
                 </li>
               </ul>
-              <!-- end dropdown secend level -->
+              <!-- dropdown level 1 -->
               </li>
                 <li>
                   <a href="javascript:;">
                     <div class="box">
                       <div class="box_item">
                         <i class="mdi mdi-label-outline mdi-24px cmp_icon">
-                          <span>Survey 2</span>
+                          <span>Survey 2 level 1</span>
                         </i>
                       </div>
                       <div class="box_item">
@@ -225,17 +204,16 @@
                     <div class="box">
                       <div class="box_item">
                         <i class="mdi mdi-label-outline mdi-24px cmp_icon">
-                          <span>Survey 3</span>
+                          <span>Survey 3 level 1</span>
                         </i>
                       </div>
                       <div class="box_item">
                         <div class="box_item-left">
                           <div class="box_item-part">
-                                <svg class="icon icon-Pending_not-selected icon__svg--sprite">
-                                  <use xlink:href="svg/svg_sprites.svg#icon-Pending_not-selected"></use>
-                                </svg>
-                                <span>Pending</span>
-
+                            <svg class="icon icon-Pending_not-selected icon__svg--sprite">
+                              <use xlink:href="svg/svg_sprites.svg#icon-Pending_not-selected"></use>
+                            </svg>
+                            <span>Pending</span>
                           </div>
                           <div class="box_item-part">
                             <i class="mdi mdi-chevron-down mdi-24px not_active"></i>
@@ -250,7 +228,7 @@
                     <div class="box">
                       <div class="box_item">
                         <i class="mdi mdi-label-outline mdi-24px cmp_icon">
-                          <span>Survey 4</span>
+                          <span>Survey 4 level 1</span>
                         </i>
                       </div>
                       <div class="box_item">
@@ -336,13 +314,6 @@
                     <i class="mdi mdi-chevron-down mdi-24px cmp_icon"></i>
                   </span>
                 </a>
-                <ul class="sub">
-                  <li><a href="javascript:;">text text</a></li>
-                  <li><a href="javascript:;">text text</a></li>
-                  <li><a href="javascript:;">text text</a></li>
-                  <li><a href="javascript:;">text text</a></li>
-                  <li><a href="javascript:;">text text</a></li>
-                </ul>
               </li>
               <li>
                 <a href="javascript:;">
@@ -364,7 +335,9 @@
         <div class="container__date">
           <p><span>Start date:</span> Monday, November 14</p>
           <p><span>End date:</span>Friday, December 10</p>
-          <a href="javascript:;">Change end date</a>
+          <a href="#test-popup" class="open-popup-link">
+            Change end date
+          </a>
       </div>
 
       <div class="select">
@@ -490,6 +463,9 @@
     <script>
         window.jQuery || document.write("<script src='node_modules/jQuery/jquery.min.js'><\/script>");
     </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
     <script src="js/niceSelect.jquery.js">
     </script>
