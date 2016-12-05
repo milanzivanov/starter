@@ -27,7 +27,9 @@
 @import "partials/header";
 /* ----------------- scss main
 ----------------------------------------------------------------------- */
-
+//////////////////////////////
+// popup magnific popup plugin
+/////////////////////////////
 .white-popup {
   position: relative;
   background: #FFF;
@@ -42,6 +44,9 @@ body {
   font-family: sans-serif;
   font-size: 14px;
 }
+///////////////////////////////
+// :root == html css variables
+//////////////////////////////
 :root {
   --main-color1: orange;
   --main-color2: #e5e5e5;
@@ -102,8 +107,6 @@ body {
       width: 100%;
       color: #959595;
 
-      //background: springgreen;
-
       ul {
         li {
           display: flex;
@@ -135,14 +138,15 @@ body {
               text-transform: uppercase;
             }
           }
-          /////////////////////////////
+          ///////////////////////////
           // active dropdown level 1
+          //////////////////////////
           a.active {
             background: #fff;
             border-bottom: 1px solid #cecece;
             > span {
               color: #005EBC;
-              > .mdi-folder {
+              > .cmp_icon {
                 color: #005EBC;
               }
             }
@@ -161,13 +165,12 @@ body {
           }
           /////////////////////////////
           //dropdown level 1
+          ////////////////////////////
           ul.sub {
             background: #fff;
             z-index: 10;
             width: 100%;
             display: none;
-
-            //background: indianred;
 
             li {
               position: relative;
@@ -250,6 +253,7 @@ body {
           }
           /////////////////////////////
           // dropdown level 2
+          ////////////////////////////
           .sub {
             li {
               a {
@@ -270,8 +274,9 @@ body {
                     }
                   }
               }
-              /////////////////////////////
+              ///////////////////////////
               // active dropdown 2 level
+              ///////////////////////////
               a.active {
                 background: #fff;
                 border-bottom: 1px solid #cecece;
@@ -301,8 +306,9 @@ body {
                     }
                   }
                 }
-                /////////////////////////////
+                ////////////////////
                 // dropdown level 3
+                ///////////////////
                 .sub {
                   //background: pink;
                   li {
@@ -324,7 +330,9 @@ body {
                         }
                       }
                     }
+                    /////////////////////////////////
                     // dropdown level 3 active state
+                    ////////////////////////////////
                     a.active {
                       //background: yellow;
                       .box {
@@ -381,7 +389,9 @@ body {
       }
     }
   }
+  /////////////
   // date field
+  ////////////
   .container {
     width: 100%;
     .container__date {
@@ -418,7 +428,9 @@ body {
       }
     }
   }
+  ////////////////
   // select field
+  ///////////////
   .select {
     display: flex;
     margin: 10px 20px;
@@ -464,8 +476,9 @@ body {
       font-size : 16px;
     }
   }
-
+  ////////////
   // tables
+  ///////////
   .table {
     padding: 20px;
     .select_section {
@@ -501,8 +514,9 @@ body {
     }
 
 }
-
+////////
 // lader
+///////
 .loader {
   color: #fff;
   position: fixed;

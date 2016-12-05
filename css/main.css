@@ -221,7 +221,7 @@ body {
           border-bottom: 1px solid #cecece; }
           .main .main__box__left .nav ul li a.active > span {
             color: #005EBC; }
-            .main .main__box__left .nav ul li a.active > span > .mdi-folder {
+            .main .main__box__left .nav ul li a.active > span > .cmp_icon {
               color: #005EBC; }
           .main .main__box__left .nav ul li a.active span {
             transition: all 0.3s ease-in-out; }
