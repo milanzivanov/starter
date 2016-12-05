@@ -321,11 +321,6 @@ body {
                             margin-left: 15px;
                             fill: #959595;
                           }
-                          .box_item--right {
-                            .cmp_icon--arrow {
-                              color: red;
-                            }
-                          }
                         }
                       }
                     }
@@ -340,15 +335,12 @@ body {
                             color: #000;
                           }
                           .icon__svg--sprite {
-                            fill: #005EBC;
-                            &:focus {
-                              fill: red;
-                            }
+                            //fill: #005EBC;
                           }
-                          .cmp_icon--arrow {
-                            transition: all 0.3s ease-in-out;
-                            transform: rotate(180deg);
-                            color: #000;
+                          .cmp_icon--space {
+                            margin-left: 15px;
+                            //fill: #959595;
+                            fill: #005EBC;
                           }
                         }
                       }
