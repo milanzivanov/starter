@@ -2,7 +2,7 @@
 $(document).ready(function($) {
     $(".mdi-menu-down, .mdi-plus").on("click", function(){
         alert("radi!!!");
-        console.log("radi ili ne");
+        //console.log("radi ili ne");
     });
     // first drop level
     $(".nav ul li a").on('click', function() {
@@ -13,7 +13,6 @@ $(document).ready(function($) {
 $(function() {
   // dropdown menu firs level
   $('.nav ul li a').on('click', function(e) {
-    //$(".sub").toggleClass('open');
     e.preventDefault();
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
@@ -31,14 +30,11 @@ $(function() {
   // custom select niceSelect
   $('select').niceSelect();
 
-
   // Example 1: From an element in DOM
   $('.open-popup-link').magnificPopup({
     type:'inline',
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
-
-
 
 });
 
