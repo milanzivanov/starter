@@ -135,7 +135,7 @@ html {
   background: #FFF;
   padding: 20px;
   width: auto;
-  max-width: 500px;
+  max-width: 800px;
   margin: 20px auto; }
 
 body {
@@ -365,7 +365,8 @@ body {
       padding: 5px;
       font-size: 16px;
       line-height: 22px;
-      color: #3C3D41; }
+      color: #3C3D41;
+      background: transparent; }
       .container .container__date p:first-child {
         padding-right: 50px; }
       .container .container__date p:nth-child(2) {
