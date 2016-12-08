@@ -42,6 +42,7 @@ body {
   font-family: 'lato-black', sans-serif;
   font-family: sans-serif;
   font-size: 14px;
+  -webkit-font-smoothing: antialiased;
 }
 ///////////////////////////////
 // :root == html css variables
@@ -75,6 +76,7 @@ body {
         .header__item--link {
           a {
             display: block;
+            padding: 10px 0 0 20px;
             img {
               width: 65px;
               height: 65px;
@@ -88,13 +90,13 @@ body {
           align-items: center;
           text-decoration: none;
           color: #fff;
-          margin: 0 10px 0 0;
+          margin: 0 12px 0 0;
           text-transform: uppercase;
           .mdi-plus {
-            margin-right: 10px;
+            margin: 0 20px 0 0;
           }
           .mdi-menu-down {
-            margin-left: 25px;
+            margin-left: 20px;
           }
           span {
             cursor: default;
@@ -120,7 +122,7 @@ body {
             width: 100%;
             align-items: center;
             text-decoration: none;
-            padding: 15px 0;
+            padding: 20px;
             color: #959595;
             cursor: pointer;
             justify-content: space-between;
@@ -130,7 +132,7 @@ body {
               .mdi-folder,
               .mdi-folder-plus {
                 color: #959595;
-                padding: 0 10px;
+                margin: 0 10px 0 0;
               }
             }
             span:first-letter {
@@ -145,13 +147,14 @@ body {
             border-bottom: 1px solid #cecece;
             > span {
               color: #005EBC;
-              > .cmp_icon {
-                color: #005EBC;
+              > .cmp_icon--folder {
+                transition: all 0.3s ease-in-out;
+                color: #005EBC !important;
+                transform: rotate(180deg);
               }
             }
             span {
-              transition: all 0.3s ease-in-out;
-              > i {
+              > .cmp_icon {
                 transition: all 0.3s ease-in-out;
                 transform: rotate(180deg);
                 color: #000;
@@ -159,7 +162,7 @@ body {
             }
           }
           .mdi-chevron-down {
-            margin: 0 20px 0 0;
+            //margin: 0 20px 0 0;
             cursor: pointer;
           }
           /////////////////////////////
@@ -175,7 +178,7 @@ body {
               position: relative;
               a {
                 color: #fff;
-                padding: 15px;
+                padding: 15px 20px;
                 color: #3C3D41;
                 .box {
                   display: flex;
@@ -218,10 +221,10 @@ body {
                         .icon-Pending_not-selected {
                         }
                         span {
-                          padding: 0 0 5px 5px;
+                          padding: 0 0 5px 0;
                         }
                         i.mdi.mdi-chevron-down.mdi-24px {
-                            margin: 0 6px 0 0;
+                            //margin: 0 6px 0 0;
                             align-self: flex-end;
                         }
                         .not_active {
@@ -229,7 +232,7 @@ body {
                         }
                         &:nth-child(1) {
                           flex: 1 1 100%;
-                          padding: 0 0 0 50px;
+                          padding: 0 0 0 45px;
                           color: #959595;
                           display: flex;
                           justify-content: center;
@@ -240,7 +243,6 @@ body {
                       width: 24px;
                       height: 24px;
                       fill: #3C3D41;
-                      margin-right: 5px;
                     }
                   }
                 }
@@ -256,6 +258,7 @@ body {
           .sub {
             li {
               a {
+                padding: 20px !important;
                 .box_item {
                     display: flex;
                     flex-direction: row-reverse;
@@ -316,9 +319,10 @@ body {
                         .box_item {
                           span {
                             color: #959595;
+                            padding: 0 0 0 10px;
                           }
                           .cmp_icon--space {
-                            margin-left: 15px;
+                            margin: 0 10px 0 10px;
                             fill: #959595;
                           }
                         }
@@ -338,9 +342,14 @@ body {
                             //fill: #005EBC;
                           }
                           .cmp_icon--space {
-                            margin-left: 15px;
                             //fill: #959595;
                             fill: #005EBC;
+                          }
+                          .cmp_icon--arrow {
+                            //color: #959595;
+                            transition: all 0.3s ease-in-out;
+                            color: #000 !important;
+                            transform: rotate(180deg);
                           }
                         }
                       }
@@ -363,7 +372,7 @@ body {
       align-items: center;
       margin: 0 20px;
       border-bottom: 1px solid #cecece;
-      padding: 26px 0;
+      padding: 31px 0;
       h2 {
         color: #3C3D41;
         font-size: 24px;
@@ -415,7 +424,8 @@ body {
         outline: none;
         transition: all 0.3s ease-in-out;
         &:hover {
-          color: #fff;
+            color: #3c3d41;
+            background: #cecece;
         }
       }
     }
@@ -425,7 +435,7 @@ body {
   ///////////////
   .select {
     display: flex;
-    margin: 10px 20px;
+    margin: 0 20px 10px 20px;
     position: relative;
     font-size : 16px;
     align-items: center;
