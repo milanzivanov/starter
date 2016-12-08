@@ -39,10 +39,11 @@
   margin: 20px auto;
 }
 body {
-  font-family: 'lato-black', sans-serif;
+  font-family: 'WhitneyBold', 'lato-black', sans-serif;
   font-family: sans-serif;
   font-size: 14px;
-  -webkit-font-smoothing: antialiased;
+  font-family: 'Whitney-Light';
+  font-weight: normal;
 }
 ///////////////////////////////
 // :root == html css variables
@@ -259,6 +260,7 @@ body {
             li {
               a {
                 padding: 20px !important;
+                position: relative;
                 .box_item {
                     display: flex;
                     flex-direction: row-reverse;
@@ -275,7 +277,24 @@ body {
                       color: #959595;
                     }
                   }
-              }
+
+                }
+                // .border_bottom-not {
+                //     position: relative;
+                //     &:first-child,
+                //     &:last-child {
+                //         border-bottom: none;
+                //     }
+                //     &:after {
+                //       content: "";
+                //       width: 92%;
+                //       height: 1px;
+                //       background: #cecece;
+                //       position: absolute;
+                //       bottom: 0;
+                //       right: 0;
+                //     }
+                // }
               ///////////////////////////
               // active dropdown 2 level
               ///////////////////////////
@@ -314,6 +333,7 @@ body {
                 .sub {
                   //background: pink;
                   li {
+                      //border-bottom: none;
                     a {
                       .box {
                         .box_item {
