@@ -39,10 +39,9 @@
   margin: 20px auto;
 }
 body {
-  font-family: 'WhitneyBold', 'lato-black', sans-serif;
-  font-family: sans-serif;
+  font-family: 'lato-black', sans-serif;
   font-size: 14px;
-  font-family: 'Whitney-Light';
+  //font-family: 'Whitney-Light';
   font-weight: normal;
 }
 ///////////////////////////////
@@ -108,7 +107,6 @@ body {
     .nav {
       width: 100%;
       color: #959595;
-
       ul {
         li {
           display: flex;
@@ -174,9 +172,9 @@ body {
             z-index: 10;
             width: 100%;
             display: none;
-
             li {
               position: relative;
+              //border-bottom: none;
               a {
                 color: #fff;
                 padding: 15px 20px;
@@ -279,22 +277,22 @@ body {
                   }
 
                 }
-                // .border_bottom-not {
-                //     position: relative;
-                //     &:first-child,
-                //     &:last-child {
-                //         border-bottom: none;
-                //     }
-                //     &:after {
-                //       content: "";
-                //       width: 92%;
-                //       height: 1px;
-                //       background: #cecece;
-                //       position: absolute;
-                //       bottom: 0;
-                //       right: 0;
-                //     }
-                // }
+                .border_bottom-not {
+                    position: relative;
+                    &:first-child,
+                    &:last-child {
+                        //border-bottom: none !important;
+                    }
+                    &:after {
+                      content: "";
+                      width: 92%;
+                      height: 1px;
+                      background: #cecece;
+                      position: absolute;
+                      bottom: 0;
+                      right: 0;
+                    }
+                }
               ///////////////////////////
               // active dropdown 2 level
               ///////////////////////////
@@ -348,6 +346,25 @@ body {
                         }
                       }
                     }
+
+
+                    .border_bottom-not {
+                        position: relative;
+                        &:first-child,
+                        &:last-child {
+                            border-bottom: none !important;
+                        }
+                        &:after {
+                          content: "";
+                          width: 92%;
+                          height: 1px;
+                          background: #cecece;
+                          position: absolute;
+                          bottom: 0;
+                          right: 0;
+                        }
+                    }
+
                     /////////////////////////////////
                     // dropdown level 3 active state
                     ////////////////////////////////
@@ -560,9 +577,9 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-
   transition: all 5s ease-in-out;
 }
+
 @keyframes rotation {
   from {
     transform: rotate(0)
@@ -953,40 +970,3 @@ body {
     height: 84px
   }
 }
-
-
-
-
-
-
-
-// a.active {
-//   background: #fff;
-//   border-bottom: 1px solid #cecece;
-//   .cmp_icon--rotate {
-//     transition: all 0.3s ease-in-out;
-//     //transform: rotate(180deg);
-//     color: red;
-//     span {
-//       color: red;
-//     }
-//   }
-//   .box_item {
-//     color: red;
-//     .box_item-left {
-//       color: red;
-//       .box_item-part {
-//         .icon__svg--sprite {
-//           stroke: red !important;
-//         }
-//         span {
-//           color: red;
-//           }
-//         }
-//         .not-active {
-//           color: red;
-//         }
-//       }
-//     }
-//   }
-// }

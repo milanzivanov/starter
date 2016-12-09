@@ -25,6 +25,12 @@
 
 <body>
 
+  <!-- https://github.com/raphaelfabeni/css-loader -->
+  <!-- Loader -->
+  <div class="loader loader-default"></div>
+  <!-- Loader active -->
+  <div class="loader loader-default is-active" data-text blink></div>
+
   <!-- Popup itself -->
   <div id="test-popup" class="white-popup mfp-hide">
 
@@ -87,13 +93,6 @@
       </div>
   </div>
 
-
-<!-- https://github.com/raphaelfabeni/css-loader -->
-<!-- Loader -->
-<div class="loader loader-default"></div>
-<!-- Loader active -->
-<div class="loader loader-default is-active" data-text blink></div>
-
   <div class="main">
     <div class="main__box__left">
       <header class="header">
@@ -153,8 +152,8 @@
                   </a>
               <!-- =============== dropdown level 2 ============== -->
               <ul class="sub">
-                <li>
-                  <a href="javascript:;">
+                <li style="border-bottom: none;">
+                  <a href="javascript:;" style="border: 1px solid #cecece;">
                     <div class="box">
                       <div class="box_item">
                       <span>Assessment Design level 2</span>
@@ -171,8 +170,8 @@
 
                     <!-- =============== dropdown level 3 ============== -->
                     <ul class="sub">
-                      <li>
-                        <a class="border_bottom-not" href="javascript:;">
+                      <li class="border_bottom-not">
+                        <a href="javascript:;">
                           <div class="box">
                             <div class="box_item">
                             <span class="box__item--margin">Participation Monitoring level 3</span>
@@ -183,8 +182,8 @@
                           </div>
                         </a>
                       </li>
-                      <li>
-                        <a class="border_bottom-not" href="javascript:;">
+                      <li class="border_bottom-not">
+                        <a href="javascript:;">
                           <div class="box">
                             <div class="box_item">
                                 <span class="box__item--margin">E-Emails & Campaigns level 3</span>
@@ -530,9 +529,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
 <script src="js/niceSelect.jquery.js"></script>
-
-
-
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>

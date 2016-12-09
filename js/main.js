@@ -44,6 +44,6 @@ $(function() {
    $(".is-active").show();
    setTimeout(function () {
       //test();
-      $('.is-active').hide();
+      $('.is-active, .loader-default').hide();
    }, 4000);
 })();
