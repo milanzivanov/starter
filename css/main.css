@@ -182,6 +182,7 @@ html {
 body {
   font-family: 'lato-black', sans-serif;
   font-size: 14px;
+  font-family: 'Whitney-Light';
   font-weight: normal; }
 
 :root {
@@ -330,8 +331,6 @@ body {
                     width: 24px;
                     height: 24px;
                     fill: #3C3D41; }
-          .main .main__box__left .nav ul li ul.sub li:last-child {
-            border-bottom: none; }
         .main .main__box__left .nav ul li .sub li a {
           padding: 20px !important;
           position: relative; }
@@ -348,6 +347,8 @@ body {
               color: #959595; }
         .main .main__box__left .nav ul li .sub li .border_bottom-not {
           position: relative; }
+          .main .main__box__left .nav ul li .sub li .border_bottom-not:first-child, .main .main__box__left .nav ul li .sub li .border_bottom-not:last-child {
+            border-bottom: none !important; }
           .main .main__box__left .nav ul li .sub li .border_bottom-not:after {
             content: "";
             width: 92%;

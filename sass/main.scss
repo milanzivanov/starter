@@ -41,7 +41,7 @@
 body {
   font-family: 'lato-black', sans-serif;
   font-size: 14px;
-  //font-family: 'Whitney-Light';
+  font-family: 'Whitney-Light';
   font-weight: normal;
 }
 ///////////////////////////////
@@ -174,7 +174,9 @@ body {
             display: none;
             li {
               position: relative;
-              //border-bottom: none;
+              &:first-child {
+                //border-bottom: none; ///////
+              }
               a {
                 color: #fff;
                 padding: 15px 20px;
@@ -248,7 +250,7 @@ body {
               }
             }
             li:last-child {
-              border-bottom: none;
+              //border-bottom: none;
             }
           }
           /////////////////////////////
@@ -281,7 +283,7 @@ body {
                     position: relative;
                     &:first-child,
                     &:last-child {
-                        //border-bottom: none !important;
+                        border-bottom: none !important;
                     }
                     &:after {
                       content: "";
@@ -346,8 +348,6 @@ body {
                         }
                       }
                     }
-
-
                     .border_bottom-not {
                         position: relative;
                         &:first-child,
@@ -364,7 +364,6 @@ body {
                           right: 0;
                         }
                     }
-
                     /////////////////////////////////
                     // dropdown level 3 active state
                     ////////////////////////////////
@@ -551,7 +550,6 @@ body {
           color: #000;
       }
     }
-
 }
 ////////
 // lader
@@ -579,7 +577,6 @@ body {
   top: 0;
   transition: all 5s ease-in-out;
 }
-
 @keyframes rotation {
   from {
     transform: rotate(0)
