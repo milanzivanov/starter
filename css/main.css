@@ -198,15 +198,21 @@ body {
   font-family: 'Whitney-BookFLS135';
   font-weight: normal; }
 
+body, html {
+  height: 100%;
+  width: 100%; }
+
 :root {
   --main-color1: orange;
   --main-color2: #e5e5e5;
   --header-color: #bd1934; }
 
 .main {
-  display: flex; }
+  display: flex;
+  height: 100%; }
   .main .main__box__left {
     flex: 1;
+    height: 100%;
     background-color: #f5f5f5;
     -webkit-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.65);
     -moz-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.65);
@@ -245,7 +251,12 @@ body {
             cursor: default; }
     .main .main__box__left .nav {
       width: 100%;
-      color: #959595; }
+      color: #959595;
+      display: inline-block;
+      padding: 5px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      height: calc(100% - 87px); }
       .main .main__box__left .nav ul li {
         display: flex;
         justify-content: space-between;
@@ -417,7 +428,11 @@ body {
 
 .main__box__right {
   flex: 4;
-  background: var(--main-color2); }
+  background: var(--main-color2);
+  padding: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%; }
   .main__box__right .main__box__right--right {
     display: flex;
     justify-content: space-between;
